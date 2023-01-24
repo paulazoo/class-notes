@@ -9,8 +9,8 @@ Given linearly independent vectors $v_1, v_3, ...$, obtain an orthonomal unit ba
 
 __Note__:
 If $T(x)=\mathrm{proj_V}(x)$,
-then we can use $\hat{w_1}, \hat{w_2}, ...$ with the __vector on subspace projection__ operation ([PS12.md](./PS12.md)) to find $T(x) matrix$:
-
+then we can use $\hat{w_1}, \hat{w_2}, ...$ with the __vector on subspace projection__ operation ([ops_rev.md](./ops_rev.md)) to find $T(x)$ matrix:
+2
 e.g. $\mathrm{proj_V}(e_1)=(e_1\cdot \hat{w_1})\hat{w_1}+(e_1\cdot \hat{w_2})\hat{w_2}+...$
 
 

@@ -79,6 +79,26 @@ disp(D(i,i)*V(:,i))
 [V,D]=eig(B);
 H=U^(-1)*P*U
 
-%%
+%% 12i
+% Plot $f(x)=\cos(3x)$ vs $x$ for $x=(-2\pi,\pi)$:
+x=[2*pi:0.1:3*pi];
+f=2*exp(-x/2).*sin(2*x);
+figure(1);clf
+plot(x,f)
+% always label axes and provide titles:
+xlabel('x')
+ylabel('f')
+title('f(x)=2e^{-x/2}sin(2x)')
 
-
+%% 12ii
+% Solve a linear equations $Ax=b$:
+A=[3,4,4;-0.6,-4.8,-7.8;1.5,0.4,-10.8];
+b=[-2; 4; 1];
+fprintf(1,'determinant ofA:\n')
+det(A)
+fprintf(1,'solution using matrix inverse is:\n')
+x2=inv(A)*b
+fprintf(1,'checking that x is a solution; A*x1:\n')
+A*x1
+fprintf(1,'b:\n')
+b

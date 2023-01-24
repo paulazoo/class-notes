@@ -10,3 +10,6 @@ https://www.dropbox.com/s/keiaw6tib1afj38/apm120-notes.pdf?dl=0
 
 Online Matrix calculator:
 https://matrix.reshish.com/gauss-jordanElimination.php
+
+Harvard site (might require VPN):
+https://courses.seas.harvard.edu/climate/eli/Courses/APM120/Sources/
