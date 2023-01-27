@@ -52,8 +52,12 @@ disp(A^(-1)*A)
 %% 5a
 disp((2-5i)*(5-2i))
 
-%% 5c
+%% 5b
 z1=(2+5i);
+z2=(2+5i);
+disp(abs(z1/z2))
+
+%% 5c
 disp(3*conj(exp(2*z1)))
 
 disp(3*exp(4)*(cos(10)-(sin(10)*i)))
@@ -79,8 +83,16 @@ disp(D(i,i)*V(:,i))
 [V,D]=eig(B);
 H=U^(-1)*P*U
 
+%% 11v
+grad_norm = norm([-42; 6]);
+quiver(-2,1,-42/grad_norm,6/grad_norm)
+hold on
+x = -3:0.1:3;
+y = -3:0.1:3;
+[X,Y] = meshgrid(x,y);
+Z = (17*(X.^2))+(26*X*Y)+(29*(Y.^2));
+contour(X,Y,Z);
 %% 12i
-% Plot $f(x)=\cos(3x)$ vs $x$ for $x=(-2\pi,\pi)$:
 x=[2*pi:0.1:3*pi];
 f=2*exp(-x/2).*sin(2*x);
 figure(1);clf
@@ -99,6 +111,6 @@ det(A)
 fprintf(1,'solution using matrix inverse is:\n')
 x2=inv(A)*b
 fprintf(1,'checking that x is a solution; A*x1:\n')
-A*x1
+A*x2
 fprintf(1,'b:\n')
 b
