@@ -1,0 +1,3 @@
+A line such as:
+1 2 3 4
+means that users 2,3,4 are the friends of user 1
